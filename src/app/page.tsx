@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white min-w-[430px]">
+    <div className="min-h-screen  w-full overflow-x-hidden">
       {/* Header */}
       <header className="    bg-white shadow-sm  fixed min-w-[408px] z-60 left-[11px] right-[10.99px] top-[14px] border-[1px] rounded-[8px] border-[#BCCDB4]">
          <div className="absolute inset-0 min-w-[430px] bg-[url('/headerbg.png')] bg-cover bg-center opacity-30"></div>
@@ -34,7 +34,7 @@ export default function Home() {
          <div className="absolute inset-0 min-w-[430px] bg-[url('/headerbg.png')] bg-cover bg-center opacity-30"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex py-4 gap-2 overflow-x-scroll sticky">
+          <div className="flex py-4 gap-2 overflow-x-auto scrollbar-hide sticky">
             <button className="flex items-center  bg-[#F1DECA] text-black min-w-[175px] min-h-[40px]  rounded-[16px] border-[1px] border-[#B5A697] text-sm py-[10px] px-[20px] gap-2">
               <Image src='/diagnostic.svg' alt="Diagnostics Icon" width={20} height={20} />
               <span className="text-sm">Diagnostics First</span>
