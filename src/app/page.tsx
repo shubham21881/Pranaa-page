@@ -61,15 +61,15 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-4xl mx-auto  sm:px-6 lg:px-8 ">
         {/* Hero Section */}
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">
+        <div className="w-full mb-12">
+          <h1 className="text-4xl px-5 md:text-5xl font-light text-gray-900 mb-8">
             InnerSense
           </h1>
           
           {/* Device Image */}
-          <div className="relative mb-8">
+          <div className="relative   mb-8">
             <Image 
               src='/image 1.png' 
               alt="InnerSense device scanning a hand" 
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         {/* What InnerSense Measures */}
-        <section className=" w-full py-[24px] px-[20px] g-[64px]">
+        <section className=" w-full py-[24px] px-[20px] g-[64px] ">
           <h2 className="text-2xl font-light text-gray-900 mb-6">
             What InnerSense Measures
           </h2>
@@ -160,55 +160,59 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className=" relative bg-white border-t mt-16 w-full  min-h-[916px] pb-[24px]  ">
+      <footer className=" relative bg-white   w-full  min-h-[916px] pb-[24px]  ">
         <div className="absolute inset-0 bg-[url('/footerbg.png')] bg-cover bg-center opacity-30"></div>
-        <div className=" relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
-          <div className="grid   gap-8">
+        <div className=" relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  ">
+          
             <div>
-              <div className="flex   items-center min-w-[430px] min-h-[146px] p-[20px] g-[10px]">
+              <div className="flex   items-center min-w-[430px] min-h-[146px]  g-[10px]">
                                                                                             
                      <Image src='/logo(1).png' alt="Diagnostics Icon" width={117} height={106} />
                 
               </div>
               <div className="w-full min-h-[730px]  g-[54px]">
                 <div className="w-full min-h-[612px] gap-[44px]">
-                    <div className=" flex w-full min-h-[308px]">
-                                                <div className="  flex flex-col w-1/2  min-h-[308px] text">
-                                                                        <h4 className="  font-medium text-gray-900">Location</h4>
-                                                                        <p className="text-sm">Inside Kanwar Nursing Home, Shankar Nagar, Raipur</p>
-                                                                        <h4 className="font-medium text-gray-900 mt-4">Phone</h4>
+                    <div className=" grid grid-cols-2  w-full min-h-[308px] gap-5">
+                                                <div className="  flex flex-col w-full sm:w-1/2    min-h-[308px]">
+                                                                        <h4 className="  font-bold text-gray-900">Location</h4>
+                                                                        <p className="text-sm">Inside Kanwar Nursing Home  Shankar Nagar Raipur</p>
+                                                                        <h4 className="font-bold text-gray-900 mt-4">Phone</h4>
                                                                         <p>+91 XXXXXXXXX</p>
-                                                                        <h4 className="font-medium text-gray-900 mt-4">Email</h4>
+                                                                        <h4 className="font-bold text-gray-900 mt-4">Email</h4>
                                                                          <p>hello@pranaa.in</p>
-                                                                         <h4 className="font-medium text-gray-900 mb-4">Social</h4>
+                                                                         <h4 className="font-bold text-gray-900 mb-1 mt-4">Social</h4>
                                                                              <div className="flex space-x-4">
                                                                                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                                                                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                                                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                                                                </svg>
+                                                                               <Image src='/whatsapp.svg' alt="whatsapp" width={24} height={24} />
+                                                                                
                                                                                 </a>
                                                                                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                                                                                <span className="text-lg font-bold">X</span>
+                                                                               <Image src='/instagram.svg' alt="instagram" width={24} height={24} />
+                                                                                
+                                                                                </a>
+                                                                                <a href="#" className="text-gray-600 hover:text-gray-900">
+                                                                               <Image src='/twitter.svg' alt="instagram" width={24} height={24} />
+                                                                                
                                                                                 </a>
                                                                           </div>
                                                    </div> 
                            
-                                         <div className="flex flex-col w-1/2 ">
-                                            <h4 className="font-medium text-gray-900 mb-4">Pranaa</h4>
-                                            <ul className="space-y-2 text-sm text-gray-600 ">
-                                              <li><a href="#" className="hover:text-gray-900">About</a></li>
-                                              <li><a href="#" className="hover:text-gray-900">Community</a></li>
-                                              <li><a href="#" className="hover:text-gray-900">Contact</a></li>
-                                              <li><a href="#" className="hover:text-gray-900">Team</a></li>
-                                              <li><a href="#" className="hover:text-gray-900">Collaboration</a></li>
-                                              <li><a href="#" className=" block w-full hover:text-gray-900 break-words whitespace-normal">Advance Medical Equipment</a></li>
-                                            </ul>
-                                          </div>    
+                                         <div className="flex flex-col w-full sm:w-1/2">
+                                            <h4 className="font-bold text-gray-900 mb-4">Pranaa</h4>
+                                            <div className="space-y-2 text-sm text-gray-600">
+                                              <a href="#" className="block hover:text-gray-900 border-b-[1px]  border-[#BDC5E4]">About</a>
+                                              <a href="#" className="block hover:text-gray-900 border-b-[1px]  border-[#BDC5E4]">Community</a>
+                                              <a href="#" className="block hover:text-gray-900 border-b-[1px]  border-[#BDC5E4]">Contact</a>
+                                              <a href="#" className="block hover:text-gray-900 border-b-[1px]  border-[#BDC5E4]">Team</a>
+                                              <a href="#" className="block hover:text-gray-900 border-b-[1px]  border-[#BDC5E4]">Collaboration</a>
+                                              <a href="#" className="block hover:text-gray-900 break-words">Advance Medical Equipment</a>
+                                            </div>
+                                          </div>   
                       
 
                     </div>
                        <div className="w-full min-h-[260px] g-[12px] mt-6">
-                                <h4 className="font-medium text-gray-900 mb-4">Our key services</h4>
+                                <h4 className="font-bold text-gray-900 mb-4">Our key services</h4>
                                 <ul className="space-y-2 text-sm text-gray-600 flex flex-col">
                                   <li>Holistic Healing</li>
                                   <li>Chronic Diseases</li>
@@ -223,7 +227,7 @@ export default function Home() {
                              </div>
                  
                  
-                                <div className=" min-w-[241px]  min-h-[64px] pt-8  text-sm text-gray-600">
+                                <div className="w-full  mt-[25px]  min-h-[64px] pt-8  text-sm text-gray-600">
                                     <p>TERMS OF USE | PRIVACY POLICY</p>
                                      <p className="mt-2">©2024 Pranaa All Rights Reserved.</p>
                                  </div>
@@ -244,7 +248,7 @@ export default function Home() {
             </div>
 
            
-          </div>
+          
           
          
         </div>
